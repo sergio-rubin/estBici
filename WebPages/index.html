@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="app.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>estBici</title>
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <img src="estBiciLogo.png" alt="estBici" class="icon" onclick="showPage('main')">
+
+                <button class="navButton" <a href="#" onclick="showPage('main')">Inicio</a></button>
+                <button class="navButton" <a href="#" onclick="showPage('about')">Acerca de</a></button>
+                <button class="navButton" <a href="#" onclick="showPage('contact')">Contacto</a></buttn>
+            </nav>
+        </header>
+
+        <section class="page" id="main">
+            <h1>estBici</h1>
+            <p>¡Bienvenido a estBici! Aquí podrás encontrar información sobre las estaciones de bicicletas públicas de la Ciudad de México.</p>
+        </section>
+
+        <section class="page" id="about" style="display: none;">
+            <h2>Acerca de</h2>
+            <p>EstBici es una aplicación web que te permite visualizar la ubicación de las estaciones de bicicletas en tu Universidad. 
+            Además, podrás consultar información sobre el número de bicicletas disponibles en cada estación y la distancia a la estación más cercana.</p>
+        </section>
+
+        <section class="page" id="contact" style="display: none;">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna duda o sugerencia, no dudes en contactarnos a través de nuestro correo electrónico:
+            <a href="mailto:">stuBici@contact.com.mx</a>
+            </p>
+        </section>
+    </body>
+</html>
