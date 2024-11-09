@@ -144,7 +144,7 @@ input:focus {
     background-color: #121212; 
     display: grid;
     place-content: center;
-    height: 30vh;
+    height: 20vh;
     color: #000;
 }
 
@@ -170,7 +170,7 @@ input:focus {
 
 .loader {
     text-indent: -9999em;
-    margin: 40% auto;
+    margin: 15% auto;
     position: relative;
     font-size: 11px;
     animation-delay: 0.16s;
