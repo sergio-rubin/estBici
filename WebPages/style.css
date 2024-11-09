@@ -1,18 +1,24 @@
+@font-face {
+    font-family: 'Agrandir';
+    src: url(/WebPages/Agrandir/Agrandir-Regular.otf);
+}
+
 .icon {
     width: 45px;
     height: 45px;
-    background-color: #f8f9fa;
+    background-color: #343a40;
     font-size: 20px;
-    color: #495057;
+    color: #f8f9fa;
     cursor: pointer;
     transition: 0.3s;
     display: flex;
     align-self: left;
+    border-radius: 10px;
 }
 
-nav{
+nav {
     display: flex;
-    background-color: black;
+    background-color: #212529;
     width: 70%;
     height: 60px;
     align-items: center;
@@ -22,28 +28,168 @@ nav{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     justify-content: space-around;
-    border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
+nav button{
+    background-color: #212529;
+}
+
 button {
+    font-family: 'Agrandir';
     outline: 0 !important;
     border: 0 !important;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: auto;
+    height: auto;
+    border-radius: 10%;
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #f8f9fa;
     transition: all ease-in-out 0.3s;
     cursor: pointer;
+    background-color: #343a40;
+    margin: 10px;
 }
 
 button:hover {
     transform: translateY(-3px);
+}
+
+body {
+    font-family: 'Agrandir';
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+select {
+    font-family: 'Agrandir';
+    background-color: #343a40;
+    color: #f8f9fa;
+    border: 1px solid #495057;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contenedor {
+    width: auto;
+    margin: 10px;
+    margin-bottom: 30px;    background-color: #212529;
+    color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contenedorQR img {
+    border-radius: 10px;
+}
+
+.contenedorQR {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #343a40;
+    padding: 20px;
+}
+
+input {
+    font-family: 'Agrandir';
+    background-color: #343a40;
+    color: #f8f9fa;
+    border: 1px solid #495057;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #37414b;
+}
+
+/* Animación de carga */
+.cargando{
+    font-family: 'Agrandir';
+    font-size: 1.5em; 
+    position: relative;
+    text-align: center; 
+    color: #FFF;
+    margin-top: 2em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase
+}
+
+.contenedor-loader{  
+    height: 6em;
+}
+
+#contenedor-load{ 
+    background-color: #121212; 
+    display: grid;
+    place-content: center;
+    height: 30vh;
+    color: #000;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    background: #FFF;
+    animation: cargando 1s infinite ease-in-out;
+    width: 1em;
+    height: 4em;
+}
+
+.loader:before,
+.loader:after {
+    position: absolute;
+    top: 0;
+    content: '';
+}
+
+.loader:before {
+    left: -1.5em;
+}
+
+.loader {
+    text-indent: -9999em;
+    margin: 40% auto;
+    position: relative;
+    font-size: 11px;
+    animation-delay: 0.16s;
+}
+
+.loader:after {
+    left: 1.5em;
+    animation-delay: 0.32s;
+}
+
+@keyframes cargando {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0 #FFF;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em #ffffff;
+        height: 5em;
+    }
 }
